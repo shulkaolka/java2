@@ -17,7 +17,4 @@ public abstract class Figure {
 	public String toString() {
 		return "Figure [curID=" + curID + "]";
 	}
-	
-	
-
 }

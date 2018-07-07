@@ -1,4 +1,4 @@
-package ua.univer.cvehicle;
+package ua.univer.cvehicle.transport;
 
 public abstract class CVehicle {
 	private int x, y;

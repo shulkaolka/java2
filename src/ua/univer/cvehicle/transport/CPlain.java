@@ -1,6 +1,6 @@
-package ua.univer.cvehicle;
+package ua.univer.cvehicle.transport;
 
-public class CPlain extends CVehicle {
+public class CPlain extends CVehicle implements iFlyAble {
 	private double height;
 	private int numberPass;
 

@@ -1,6 +1,6 @@
-package ua.univer.cvehicle;
+package ua.univer.cvehicle.transport;
 
-public class CShip extends CVehicle {
+public class CShip extends CVehicle implements iSwimAble{
 	private int numberPass;
 	private String destPort;
 
@@ -20,8 +20,8 @@ public class CShip extends CVehicle {
 		this.destPort = destPort;
 	}
 
-	public CShip(int x, int y, double price, double speed, double yearBirth, int numberPass, String destPort) {
-		super(x, y, price, speed, yearBirth);
+	public CShip(int x, int y, double price, double speedMile, double yearBirth, int numberPass, String destPort) {
+		super(x, y, price, speedMile, yearBirth);
 		setNumberPass(numberPass);
 		setDestPort(destPort);
 	}
@@ -30,5 +30,4 @@ public class CShip extends CVehicle {
 	public String toString() {
 		return "CShip" + super.toString() + " numberPass=" + numberPass + ", destPort=" + destPort;
 	}
-
 }
